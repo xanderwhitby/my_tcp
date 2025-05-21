@@ -4,23 +4,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-void connect(){
-  return ;
-}
-
-void processData(){
-  return ;
-}
-
-void sendData(){
-  return ;
-}
-
-void endConnection(){
-  return ;
+void makeSocket(){
+  socket1 = socket(domain, type, protocol);
+  return;
 }
 
 int main(){
-  printf("Program compiles\n");
   return 0;
-} 
+}
