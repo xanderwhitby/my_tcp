@@ -4,10 +4,18 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
+void makeSocket(){
+  int protocol = 0;
+  socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+}
+
+
 int main(){
 
-  socketfd = socket(AF_UNIX, SOCK_STREAM, );
-  return 0;
+    return 0;
+
+
 }
 
                    
