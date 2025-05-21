@@ -5,14 +5,15 @@
 #include <ctype.h>
 
 
-void makeSocket(){
+int makeSocket(){
   int protocol = 0;
-  socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+  int socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+  return socketfd;
 }
 
 
 int main(){
-
+// get the client protocol 
     return 0;
 
 
