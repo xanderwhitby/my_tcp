@@ -5,10 +5,11 @@
 #include <ctype.h>
 
 
-int makeSocket(){
+int makeProtocol(){
   int protocol = 0;
   int socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
-  return socketfd;
+  int bind;
+  for ; 
 }
 
 
@@ -19,4 +20,3 @@ int main(){
 
 }
 
-                   
