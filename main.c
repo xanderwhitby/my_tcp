@@ -1,15 +1,25 @@
 #include <stdio.h>
-#include <sys/socket.h>
-#include <string.h> 
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <unistd.h>
 
 
 int makeProtocol(){
+
   int protocol = 0;
-  int socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
-  int bind;
-  for ; 
+  int socketfd;
+  
+  socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+  if (socketfd == -1){
+    printf("%s", "Socket not made");
+  }
+
+  int bind(int socketfd, const struct sockaddr *addr, socketlen_ addrlen);
+  
+
+
 }
 
 
