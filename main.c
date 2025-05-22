@@ -14,7 +14,7 @@ int main(){
   int backlog, buffer[1024];
   int flags;
   
-  socketfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+  socketfd = socket(AF_LOCAL, SOCK_STREAM, protocol);
   if (socketfd == -1){
     printf("%s", "Socket not made");
   }

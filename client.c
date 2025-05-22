@@ -11,8 +11,11 @@ int main(){
   // this function should get package and send it to the server
   int protocol = 0;
   int clientfd;
+  char client_message[1024];
 
-  clientfd = socket(AF_UNIX, SOCK_STREAM, protocol);
+  scanf("%s", client_message);
+
+  clientfd = socket(AF_LOCAL, SOCK_STREAM, protocol);
   int connect(clientfd, const struct sockaddr *addr, socket_len addr_len);
 
 
