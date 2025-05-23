@@ -7,7 +7,7 @@
 #define PORT 8080
 
 
-int main(){
+int main(int argc, char argv[]){
 // get the client protocol 
   int protocol = 0;
   int socketfd;
@@ -26,6 +26,4 @@ int main(){
   int accept(socketfd, struct sockaddr *_Nullable restrict addr, socketlen_t *_Nullable restrict addrlen);
 
     return 0;
-
 }
-
