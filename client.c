@@ -17,10 +17,10 @@ int main(){
     int;
     payload;
   }
-  
-
   clientfd = socket(AF_LOCAL, SOCK_STREAM, protocol);
-    
+  if (clientfd = -1){
+    printf("%s\n", "Client socket not created");
+  }  
 
   int connect(clientfd, const struct sockaddr *addr, socket_len addr_len);
   printf("%s\n", client_connect);
