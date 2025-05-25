@@ -8,7 +8,7 @@
 
 
 int main(int argc, char argv[]){
-// get the client protocol 
+  //
   int protocol = 0;
   int socketfd;
   int backlog, buffer[1024];
@@ -23,9 +23,9 @@ int main(int argc, char argv[]){
     printf("%s", "Socket not made");
   }
 
-  int bind(int socketfd,  const struct sockaddr *addr, socklen_t addrlen);
+  int bind(int socketfd,(sockaddr *addr), socklen_t addrlen);
 
-  listen(socketfd, backlog);
+  listen(socketfd,backlog backlog);
   
   int accept(socketfd, struct sockaddr *_Nullable restrict addr, socketlen_t *_Nullable restrict addrlen);
   printf("%s\n", client_connect); 
